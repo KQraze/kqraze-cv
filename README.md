@@ -1,60 +1,161 @@
-# Nuxt Starter Template
+# 👋 Pavel Eliseev
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+> **💻 Fullstack Developer & Team Lead** | Tomsk, Russia 🚀
 
-Use this template to get started with [Nuxt UI](https://ui.nuxt.com) quickly.
+Passionate about modern web technologies, scalable architecture, and building strong engineering teams.
 
-- [Live demo](https://starter-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+📬 **Get in Touch:**
+- 📧 Email: [pavel.eliseev061@gmail.com](mailto:pavel.eliseev061@gmail.com)
+- 💬 Telegram: [@KQraze](https://t.me/kqraze)
 
-<a href="https://starter-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-    <img alt="Nuxt Starter Template" src="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-  </picture>
-</a>
+---
 
-> The starter template for Vue is on https://github.com/nuxt-ui-templates/starter-vue.
+## 🛠️ Tech Stack
 
-## Quick Start
+**Frontend:**
+- Vue 3, Nuxt 3
+- TypeScript
+- Tailwind CSS, SCSS
+- Pinia (State Management)
+- React, Ant Design
 
-```bash [Terminal]
-npm create nuxt@latest -- -t github:nuxt-ui-templates/starter
-```
+**Backend:**
+- Node.js
+- Laravel
+- TypeScript
 
-## Deploy your own
+**Tools & Services:**
+- Git, GitHub
+- Feature-Sliced Design (FSD) Architecture
+- REST APIs
+- Security Analysis Tools (Semgrep, Nikto, SSL Checker, WafW00f)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=starter&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fstarter&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fstarter-dark.png&demo-url=https%3A%2F%2Fstarter-template.nuxt.dev%2F&demo-title=Nuxt%20Starter%20Template&demo-description=A%20minimal%20template%20to%20get%20started%20with%20Nuxt%20UI.)
+---
 
-## Setup
+## 💼 Professional Experience
 
-Make sure to install the dependencies:
+### **Frontend Developer @ Lytko** (2024–2025)
+- Developed responsive UI components using Vue 3 and SCSS
+- Collaborated with design and backend teams
+- Optimized performance and user experience
 
-```bash
-pnpm install
-```
+### **Fullstack Developer @ Iceberg** (2025)
+- Built full-stack features using Nuxt 3 and TypeScript
+- Designed scalable backend solutions
+- Implemented modern architectural patterns
 
-## Development Server
+### **Frontend Developer @ Hamumaby** (2025)
+- Developed Vue 3 components with Tailwind CSS
+- Maintained code quality and best practices
+- Participated in sprint planning and code reviews
 
-Start the development server on `http://localhost:3000`:
+### **Freelance Fullstack Developer** (2025)
+- **Regional Education Portal** – React, TypeScript, Ant Design, React PDF
+  - Designed and implemented comprehensive educational platform
+  - Built PDF generation and reporting features
+  - Ensured responsive design across all devices
 
-```bash
-pnpm dev
-```
+### **Frontend Developer @ Contractis** (2024)
+- Developed modern UI with Nuxt 3 and TypeScript
+- Implemented Tailwind CSS styling solutions
+- Worked on component-based architecture
 
-## Production
+### **Frontend Developer @ Profteam** (2023)
+- Built Vue 3 applications with Pinia state management
+- Implemented Tailwind CSS responsive designs
+- Collaborated on feature development and bug fixes
 
-Build the application for production:
+---
 
-```bash
-pnpm build
-```
+## 👨‍💻 Leadership & Mentorship
 
-Locally preview production build:
+### Team Leadership
+- Led frontend teams at **Taskie** and **Я хочу помочь** projects
+- Managed sprint planning, task distribution, and deadline tracking
+- Fostered collaborative and productive development environment
 
-```bash
-pnpm preview
-```
+### Architecture & Best Practices
+- Designed and implemented **Feature-Sliced Design (FSD)** architecture for Vue applications
+- Established coding standards and project structure conventions
+- Mentored teammates on Vue.js, TypeScript, and Pinia best practices
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+### Code Quality
+- Conducted thorough code reviews and PR validation
+- Ensured consistency across codebase
+- Shared architectural expertise with team members
+
+---
+
+## 🚀 Personal Projects
+
+### **SecureScan** – Web Security Analysis Service
+- **Tech Stack:** Vue 3, Laravel, Semgrep, Nikto, SSL Checker, WafW00f
+- Comprehensive web security scanning and analysis platform
+- Real-time vulnerability detection
+- Detailed security reports and recommendations
+
+### **Парта героя** – Educational Platform
+- **Tech Stack:** Vue 3, FSD Architecture, Responsive Design
+- Interactive learning environment with modern UI
+- Scalable architecture for future expansion
+- [Visit Project →](https://website-link.com)
+
+---
+
+## 🏆 Achievements
+
+🥈 **2nd Place – Regional Stage** of "Professionals 2025" (Web Technologies)
+
+---
+
+## 🤝 Soft Skills
+
+**Leadership**
+- Experienced in guiding teams and setting priorities
+- Strong focus on delivery and project success
+- Creates positive team dynamics
+
+**Mentorship**
+- Coaching junior developers on industry best practices
+- Sharing architectural expertise and knowledge
+- Fostering professional growth
+
+**Communication**
+- Clear and effective collaboration in cross-functional teams
+- Excellent written and verbal communication
+- Ability to explain complex concepts simply
+
+**Problem-Solving**
+- Strong analytical thinking and critical evaluation
+- Proposes scalable and efficient solutions
+- Quickly identifies and resolves technical challenges
+
+**Adaptability**
+- Rapidly learns new technologies and frameworks
+- Adjusts to various project requirements and constraints
+- Embraces change and continuous improvement
+
+---
+
+## 📊 About This Project
+
+This is a personal portfolio website showcasing my experience, skills, and projects. Built with modern web technologies to demonstrate my technical expertise.
+
+**Tech Stack:**
+- Nuxt 3
+- Vue 3
+- TypeScript
+- Tailwind CSS
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+**Last Updated:** October 2025
+
+*Let's build something amazing together! 🚀*
+

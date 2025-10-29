@@ -1,10 +1,29 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
+@import "./fonts.css";
+
 @theme static {
-  --font-sans: 'Public Sans', sans-serif;
+  --font-sans: 'Geologica', sans-serif;
+
+  --color-primary: #a78bfa;
+  --color-primary-500: #7C3AED;
+  --color-primary-700: #5b21b6;
+
+  --color-neutral: #252525;
+  --color-dark: #1b1b1b;
+  --color-dark-700: #121212;
+
+  --color-accent: #e879f9;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+
+  --ui-header-height: 1px;
+
+  --shadow-sm: 0 0 2px rgba(255, 255, 255, 0.15);
 }
 
 body {
-  @apply scheme-dark bg-default text-default;
+  @apply bg-dark text-white font-sans;
 }

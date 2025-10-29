@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
-    '@nuxt/ui'
+    '@nuxt/ui',
+    '@nuxt/content',
+    '@nuxt/image'
   ],
 
   devtools: {
@@ -11,8 +13,17 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  routeRules: {
-    '/': { prerender: true }
+  ui: {
+    theme: {
+      colors: [
+        'primary',
+        'accent',
+        'dark',
+        'success',
+        'warning',
+        'error'
+      ]
+    }
   },
 
   compatibilityDate: '2025-01-15',
