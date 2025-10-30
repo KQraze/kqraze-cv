@@ -4,9 +4,10 @@ const { data: home } = await useAsyncData(() => queryCollection('content').path(
 
 <template>
   <div>
-    <ContentRenderer
-      v-if="home"
-      :value="home"
-    />
+    <RendererWrapper :value="home" />
   </div>
 </template>
+
+<style scoped>
+
+</style>
