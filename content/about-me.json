@@ -1,0 +1,42 @@
+{
+  "contacts": [
+    {
+      "icon": "i-heroicons-envelope",
+      "label": "Email",
+      "value": "pavel.eliseev061@gmail.com",
+      "href": "mailto:pavel.eliseev061@gmail.com"
+    },
+    {
+      "icon": "i-heroicons-phone",
+      "label": "Телефон",
+      "value": "+7 (913) 437-51-17",
+      "href": "tel:+79134375117"
+    },
+    {
+      "icon": "i-heroicons-map-pin",
+      "label": "Адрес",
+      "value": "Томск, Россия"
+    }
+  ],
+  "socials": [
+    {
+      "icon": "i-simple-icons-github",
+      "label": "Github",
+      "value": "https://github.com/KQraze",
+      "href": "https://github.com/KQraze"
+    }
+  ],
+  "languages": [
+    {
+      "flag": "i-twemoji-flag-russia",
+      "name": "Русский",
+      "level": "Родной"
+    },
+    {
+      "flag": "i-twemoji-flag-united-kingdom",
+      "name": "Английский",
+      "level": "B1 - средний"
+    }
+  ]
+}
+

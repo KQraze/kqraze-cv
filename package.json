@@ -8,20 +8,29 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "typecheck": "nuxt typecheck"
   },
   "dependencies": {
     "@iconify-json/heroicons": "^1.2.3",
+    "@iconify-json/logos": "^1.2.10",
     "@iconify-json/lucide": "^1.2.70",
     "@iconify-json/simple-icons": "^1.2.54",
+    "@iconify-json/twemoji": "^1.2.4",
     "@nuxt/content": "^3.7.1",
     "@nuxt/image": "1.11.0",
     "@nuxt/ui": "^4.0.1",
+    "@pinia/colada": "^0.17.7",
+    "@pinia/colada-nuxt": "0.2.4",
+    "@pinia/nuxt": "0.11.2",
     "better-sqlite3": "^12.4.1",
-    "nuxt": "^4.2.0"
+    "motion-v": "^1.7.4",
+    "nuxt": "^4.2.0",
+    "pinia": "^3.0.3"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.9.0",
+    "@types/node": "^24.10.0",
     "@vueuse/core": "^14.0.0",
     "@vueuse/nuxt": "^14.0.0",
     "eslint": "^9.38.0",
@@ -29,7 +38,9 @@
     "vue-tsc": "^3.1.1"
   },
   "resolutions": {
-    "unimport": "4.1.1"
+    "unimport": "4.1.1",
+    "@vue/devtools-api": "^8.0.3",
+    "@vue/devtools-kit": "^8.0.3"
   },
   "packageManager": "pnpm@10.18.3"
 }

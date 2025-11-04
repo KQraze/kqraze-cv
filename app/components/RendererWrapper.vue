@@ -1,10 +1,4 @@
 <script setup lang="ts">
-interface Props {
-  value: unknown
-}
-
-defineProps<Props>()
-
 const contentRef = useTemplateRef('contentRef')
 
 onMounted(() => {
@@ -22,12 +16,13 @@ onMounted(() => {
     }
   )
 
-  // Наблюдаем за всеми элементами контента
-  const elements = contentRef.value.querySelectorAll('h1, h2, h3, h4, h5, h6, p, ul, ol, li, pre, table, blockquote, hr')
+  const elements = contentRef.value.querySelectorAll('.content-renderer > * > *')
+
+  console.log(elements)
 
   elements.forEach((el) => {
     el.classList.add('fade-in');
-    (el as HTMLElement).style.transitionDelay = `0.05s`
+    (el as HTMLElement).style.transitionDelay = `0.1s`
     observer.observe(el)
   })
 
@@ -38,11 +33,9 @@ onMounted(() => {
 <template>
   <div
     ref="contentRef"
+    class="content-renderer"
   >
-    <ContentRenderer
-      v-if="value"
-      :value="value"
-    />
+    <slot />
   </div>
 </template>
 
@@ -50,8 +43,8 @@ onMounted(() => {
 :deep(.fade-in) {
   opacity: 0;
   transform: translateY(60px);
-  transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-  transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+  transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 :deep(.fade-in.visible) {

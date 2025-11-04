@@ -5,8 +5,18 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/content',
     '@nuxt/image',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    'motion-v/nuxt',
+    '@pinia/colada-nuxt',
+    '@pinia/nuxt'
   ],
+
+  imports: {
+    dirs: [
+      '~/queries/**',
+      '~/services/**'
+    ]
+  },
 
   devtools: {
     enabled: true

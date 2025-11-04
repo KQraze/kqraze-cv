@@ -1,16 +1,12 @@
 <script setup lang="ts">
-const { data: home } = useHomePage()
-
-useSeoMeta({
-  title: home.value?.title ?? 'Обо мне'
-})
+const { data } = useProjectBySlug()
 </script>
 
 <template>
   <RendererWrapper>
     <ContentRenderer
-      v-if="home"
-      :value="home"
+      v-if="data"
+      :value="data"
     />
   </RendererWrapper>
 </template>

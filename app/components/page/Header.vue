@@ -7,12 +7,12 @@ const items = computed<NavigationMenuItem[]>(() => [
   {
     label: 'Обо мне',
     to: '/',
-    active: route.path.startsWith('/')
+    active: route.name === 'index'
   },
   {
     label: 'Моё портфолио',
-    to: '/',
-    active: route.path.startsWith('/portfolio')
+    to: '/projects',
+    active: route.name === 'projects'
   }
 ])
 </script>
@@ -24,7 +24,3 @@ const items = computed<NavigationMenuItem[]>(() => [
     />
   </header>
 </template>
-
-<style scoped>
-
-</style>

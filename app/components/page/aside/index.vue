@@ -1,47 +1,7 @@
 <script setup lang="ts">
 import styles from './styles'
 
-const contactInfo = [
-  {
-    icon: 'i-heroicons-envelope',
-    label: 'Email',
-    value: 'pavel.eliseev061@gmail.com',
-    href: 'mailto:pavel.eliseev061@gmail.com'
-  },
-  {
-    icon: 'i-heroicons-phone',
-    label: 'Телефон',
-    value: '+7 (913) 437-51-17',
-    href: 'tel:+79134375117'
-  },
-  {
-    icon: 'i-heroicons-map-pin',
-    label: 'Адрес',
-    value: 'Томск, Россия'
-  }
-]
-
-const socialLinks = [
-  {
-    icon: 'i-simple-icons-github',
-    label: 'Github',
-    value: 'https://github.com/KQraze',
-    href: 'https://github.com/KQraze'
-  }
-]
-
-const languages = [
-  {
-    flag: 'i-twemoji-flag-russia',
-    name: 'Русский',
-    level: 'Родной'
-  },
-  {
-    flag: 'i-twemoji-flag-united-kingdom',
-    name: 'Английский',
-    level: 'B1 - средний'
-  }
-]
+const { data } = useAbout()
 </script>
 
 <template>
@@ -50,78 +10,32 @@ const languages = [
       <NuxtImg
         src="/avatar.png"
         :class="styles().image()"
-        alt="Аватар Павла Елисеева"
+        alt="Аватар"
       />
       <h2 :class="styles().title()">
         Павел Елисеев
       </h2>
       <h3 :class="styles().subtitle()">
-        Full Stack Developer
+        Fullstack Developer
       </h3>
-
       <USeparator :class="styles().separator()" />
 
       <div :class="styles().section()">
-        <div
-          v-for="contact in contactInfo"
+        <SharedSocialItem
+          v-for="contact in data?.contacts"
           :key="contact.label"
-          :class="styles().infoItem()"
-        >
-          <div :class="styles().iconWrapper()">
-            <UIcon
-              :name="contact.icon"
-              :class="styles().icon()"
-            />
-          </div>
-          <div :class="styles().infoContent()">
-            <p :class="styles().infoLabel()">
-              {{ contact.label }}
-            </p>
-            <ULink
-              v-if="contact.href"
-              :to="contact.href"
-              :class="styles().infoValue({ clickable: true })"
-              target="_blank"
-            >
-              {{ contact.value }}
-            </ULink>
-            <p
-              v-else
-              :class="styles().infoValue()"
-            >
-              {{ contact.value }}
-            </p>
-          </div>
-        </div>
+          :item="contact"
+        />
       </div>
 
       <USeparator :class="styles().separator()" />
 
       <div :class="styles().section()">
-        <div
-          v-for="social in socialLinks"
+        <SharedSocialItem
+          v-for="social in data?.socials"
           :key="social.label"
-          :class="styles().infoItem()"
-        >
-          <div :class="styles().iconWrapper()">
-            <UIcon
-              :name="social.icon"
-              :class="styles().icon()"
-            />
-          </div>
-          <div :class="styles().infoContent()">
-            <p :class="styles().infoLabel()">
-              {{ social.label }}
-            </p>
-            <ULink
-              :to="social.href"
-              :class="styles().infoValue({ clickable: true })"
-              target="_blank"
-            >
-              {{ social.value }}
-            </ULink>
-          </div>
-        </div>
+          :item="social"
+        />
       </div>
 
       <USeparator :class="styles().separator()" />
@@ -131,7 +45,7 @@ const languages = [
           Языки
         </h4>
         <div
-          v-for="lang in languages"
+          v-for="lang in data?.languages"
           :key="lang.name"
           :class="styles().languageItem()"
         >

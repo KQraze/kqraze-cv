@@ -1,5 +1,6 @@
 <script setup lang="ts">
 useHead({
+  titleTemplate: titleChunk => titleChunk ? `Павел Елисеев - ${titleChunk}` : 'Павел Елисеев - CV',
   meta: [
     { name: 'viewport', content: 'width=device-width, initial-scale=1' }
   ],
@@ -11,13 +12,11 @@ useHead({
   }
 })
 
-const title = 'Павел Елисеев - CV'
 const description = 'Pavel Eliseev CV, Full Stack Developer, JavaScript, Vue.js, Nuxt.js, Node.js, Portfolio'
 
 useSeoMeta({
-  title,
   description,
-  ogTitle: title,
+  ogTitle: 'Павел Елисеев - CV',
   ogDescription: description,
   ogImage: '/avatar.png',
   twitterImage: '/avatar.png',
@@ -27,14 +26,17 @@ useSeoMeta({
 
 <template>
   <UApp>
-    <UPage class="lg:gap-0">
+    <UPage class="lg:gap-0 flex flex-row">
       <template #left>
         <PageAside />
       </template>
       <template #default>
         <div class="flex flex-col relative">
           <PageHeader />
-          <UPageSection :ui="{ container: 'lg:py-16' }">
+          <UPageSection
+            as="main"
+            :ui="{ container: 'lg:py-16' }"
+          >
             <NuxtPage />
           </UPageSection>
         </div>
