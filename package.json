@@ -39,9 +39,13 @@
     "vue-tsc": "^3.1.1"
   },
   "resolutions": {
-    "unimport": "4.1.1",
-    "@vue/devtools-api": "^8.0.3",
-    "@vue/devtools-kit": "^8.0.3"
+    "unimport": "4.1.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "@vue/devtools-api": "^8.0.3",
+      "@vue/devtools-kit": "^8.0.3"
+    }
   },
   "packageManager": "pnpm@10.18.3"
 }
