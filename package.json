@@ -44,7 +44,8 @@
   "pnpm": {
     "overrides": {
       "@vue/devtools-api": "^8.0.3",
-      "@vue/devtools-kit": "^8.0.3"
+      "@vue/devtools-kit": "^8.0.3",
+      "perfect-debounce": "^1.0.0"
     }
   },
   "packageManager": "pnpm@10.18.3"
