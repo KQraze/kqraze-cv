@@ -18,8 +18,6 @@ onMounted(() => {
 
   const elements = contentRef.value.querySelectorAll('.content-renderer > * > *')
 
-  console.log(elements)
-
   elements.forEach((el) => {
     el.classList.add('fade-in');
     (el as HTMLElement).style.transitionDelay = `0.1s`

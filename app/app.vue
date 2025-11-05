@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Analytics } from '@vercel/analytics/nuxt'
+
 useHead({
   titleTemplate: titleChunk => titleChunk ? `Павел Елисеев - ${titleChunk}` : 'Павел Елисеев - CV',
   meta: [
@@ -42,5 +44,6 @@ useSeoMeta({
         </div>
       </template>
     </UPage>
+    <Analytics />
   </UApp>
 </template>

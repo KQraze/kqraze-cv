@@ -8,7 +8,7 @@ const { data } = useAbout()
   <UPageAside :ui="{ root: styles().base() }">
     <div :class="styles().container()">
       <NuxtImg
-        src="/avatar.png"
+        src="/images/avatar.png"
         :class="styles().image()"
         alt="Аватар"
       />

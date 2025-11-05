@@ -1,6 +1,8 @@
 import { z } from 'zod'
+import { ProjectType } from '../../types'
 
 export const projectSchema = z.object({
+  preview: z.string().optional(),
   title: z.string(),
   company: z.string().optional(),
   location: z.string().optional(),
@@ -10,6 +12,6 @@ export const projectSchema = z.object({
   description: z.string().optional(),
   technologies: z.array(z.string()),
   responsibilities: z.array(z.string()),
-  featured: z.boolean().default(false),
+  type: z.enum(ProjectType),
   order: z.number().optional()
 })

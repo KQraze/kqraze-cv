@@ -4,3 +4,9 @@ import type { projectSchema } from '../content/project'
 
 export type Contact = z.infer<typeof contactSchema>
 export type Project = z.infer<typeof projectSchema>
+
+export enum ProjectType {
+  COMMERCIAL = 'commercial',
+  FREELANCE = 'freelance',
+  PET_PROJECT = 'pet-project'
+}
