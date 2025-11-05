@@ -2,7 +2,7 @@
 const { data } = useProjectBySlug()
 
 useSeoMeta({
-  title: data.value?.title ?? 'Проект'
+  title: () => data.value?.title ?? 'Проект'
 })
 </script>
 

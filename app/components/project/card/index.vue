@@ -14,7 +14,7 @@ const splitTechnology = (technology: string) => {
 
 <template>
   <UCard
-    :ui="{ header: 'p-0 sm:p-0 relative', body: 'flex flex-col gap-2' }"
+    :ui="{ header: 'p-0 sm:p-0 relative', body: 'flex flex-col gap-2', footer: 'flex justify-end' }"
   >
     <template #header>
       <ProjectTypeBadge
@@ -64,5 +64,15 @@ const splitTechnology = (technology: string) => {
     <p class="line-clamp-2 text-base">
       {{ item.description }}
     </p>
+    <template #footer>
+      <ULink
+        v-if="item.website"
+        :to="item.website"
+        target="_blank"
+        class="font-medium"
+      >
+        Посетить сайт <UIcon name="heroicons:arrow-up-right-16-solid" />
+      </ULink>
+    </template>
   </UCard>
 </template>

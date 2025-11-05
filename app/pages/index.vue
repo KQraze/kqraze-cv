@@ -2,7 +2,7 @@
 const { data: home } = useHomePage()
 
 useSeoMeta({
-  title: home.value?.title ?? 'Обо мне'
+  title: () => home.value?.title ?? 'Обо мне'
 })
 </script>
 
