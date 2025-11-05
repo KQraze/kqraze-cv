@@ -4,14 +4,21 @@ import { Analytics } from '@vercel/analytics/nuxt'
 useHead({
   titleTemplate: titleChunk => titleChunk ? `Павел Елисеев - ${titleChunk}` : 'Павел Елисеев - CV',
   meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+    { name: 'google-site-verification', content: 'yw3Am-4d6M9_nW0VPOnCH9hLkavt32VohY_XFg1c-DE' },
+    { name: 'yandex-verification', content: '60e49dbfccb4f161' }
   ],
   link: [
     { rel: 'icon', href: '/favicon.ico' }
   ],
   htmlAttrs: {
     lang: 'ru'
-  }
+  },
+  noscript: [
+    {
+      innerHTML: '<img src="https://mc.yandex.ru/watch/105130603" style="position:absolute; left:-9999px;" alt="" />'
+    }
+  ]
 })
 
 const description = 'Павел Елисеев - Fullstack разработчик, Vue 3, Nuxt 3, React, TypeScript, Laravel. Создаю современные веб-приложения с использованием актуального стека технологий. Опыт работы 2+ года.'
