@@ -20,8 +20,8 @@ useSeoMeta({
   description,
   ogTitle: 'Павел Елисеев - CV',
   ogDescription: description,
-  ogImage: '/avatar.png',
-  twitterImage: '/avatar.png',
+  ogImage: '/images/avatar.png',
+  twitterImage: '/images/avatar.png',
   twitterCard: 'summary_large_image'
 })
 </script>
