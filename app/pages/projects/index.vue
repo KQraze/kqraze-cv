@@ -1,5 +1,9 @@
 <script setup lang="ts">
 const { data: projects } = useProjects()
+
+useSeoMeta({
+  title: 'Моё портфолио'
+})
 </script>
 
 <template>

@@ -14,14 +14,24 @@ useHead({
   }
 })
 
-const description = 'Pavel Eliseev CV, Full Stack Developer, JavaScript, Vue.js, Nuxt.js, Node.js, Portfolio'
+const description = 'Павел Елисеев - Fullstack разработчик, Vue 3, Nuxt 3, React, TypeScript, Laravel. Создаю современные веб-приложения с использованием актуального стека технологий. Опыт работы 2+ года.'
+
+const getOgImage = () => {
+  if (import.meta.server) {
+    const url = useRequestURL()
+    return `${url.protocol}//${url.host}/images/avatar.png`
+  }
+  return '/images/avatar.png'
+}
+
+const ogImage = getOgImage()
 
 useSeoMeta({
   description,
   ogTitle: 'Павел Елисеев - CV',
   ogDescription: description,
-  ogImage: '/avatar.png',
-  twitterImage: '/avatar.png',
+  ogImage,
+  twitterImage: ogImage,
   twitterCard: 'summary_large_image'
 })
 </script>
