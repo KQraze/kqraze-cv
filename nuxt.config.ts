@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     'motion-v/nuxt',
     '@pinia/colada-nuxt',
-    '@pinia/nuxt'
+    '@pinia/nuxt',
+    '@nuxtjs/sitemap'
   ],
 
   imports: {
@@ -47,4 +48,17 @@ export default defineNuxtConfig({
       }
     }
   },
+
+  sitemap: {
+    sitemaps: {
+      pages: {
+        urls: () => {
+          return [
+            { url: '/', changefreq: 'weekly', priority: 1.0, lastmod: new Date() },
+            { url: '/projects', changefreq: 'weekly', priority: 0.9, lastmod: new Date() }
+          ]
+        }
+      }
+    }
+  }
 })
