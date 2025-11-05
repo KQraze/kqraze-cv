@@ -49,7 +49,12 @@
       "@vue/devtools-api": "^8.0.3",
       "@vue/devtools-kit": "^8.0.3",
       "perfect-debounce": "^1.0.0"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "@vercel/speed-insights",
+      "better-sqlite3",
+      "sharp"
+    ]
   },
   "packageManager": "pnpm@10.18.3"
 }
