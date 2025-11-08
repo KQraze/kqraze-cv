@@ -18,7 +18,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 </script>
 
 <template>
-  <header class="sticky top-0 w-full z-10 border-b border-b-neutral bg-[#1b1b1b85] backdrop-blur-md py-2 flex justify-center">
+  <header class="sticky top-0 min-w-full z-10 border-b border-b-neutral bg-[#1b1b1b85] backdrop-blur-md py-2 flex justify-center">
     <UNavigationMenu
       class="text-white"
       :items="items"

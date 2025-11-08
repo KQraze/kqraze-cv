@@ -7,14 +7,10 @@ useSeoMeta({
 </script>
 
 <template>
-  <RendererWrapper>
-    <ContentRenderer
-      v-if="home"
-      :value="home"
-    />
-  </RendererWrapper>
+  <ContentRenderer
+    v-if="home"
+    :value="home"
+  />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>

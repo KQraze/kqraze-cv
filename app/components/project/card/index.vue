@@ -14,38 +14,30 @@ const splitTechnology = (technology: string) => {
 
 <template>
   <UCard
-    :ui="{ header: 'p-0 sm:p-0 relative', body: 'flex flex-col gap-2', footer: 'flex justify-end' }"
+    :ui="{ header: 'p-0 sm:p-0 relative overflow-hidden', body: 'flex flex-col gap-2', footer: 'flex justify-end' }"
   >
     <template #header>
       <ProjectTypeBadge
         :type="item.type as ProjectType"
         class="absolute top-4 left-4"
       />
-      <NuxtImg
-        v-slot="{ isLoaded, src, ...attrs }"
+      <ProseImg
+        v-if="item.preview"
         :src="item.preview"
         :alt="item.title"
-        class="aspect-video object-cover w-full"
-      >
-        <img
-          v-if="isLoaded"
-          :src="src"
-          v-bind="attrs"
-        >
-        <div
-          v-else
-          class="aspect-video w-full from-primary-900 to-primary-700"
-        />
-      </NuxtImg>
+        class="aspect-video object-cover w-full hover:scale-110 transition-[scale] duration-300"
+      />
     </template>
-    <h3>
+    <ProseH3
+      class="lg:mt-0 md:mt-0 mt-0 lg:mb-0 md:mb-0 mb-0"
+    >
       <ULink
         :to="item.path"
-        class="font-bold text-xl"
+        class="text-white hover:text-primary"
       >
         {{ item.title }}
       </ULink>
-    </h3>
+    </ProseH3>
     <div>
       {{ item.period }}
     </div>
@@ -61,10 +53,13 @@ const splitTechnology = (technology: string) => {
         {{ splitTechnology(tech)[1] }}
       </UBadge>
     </div>
-    <p class="line-clamp-2 text-base">
+    <p class="line-clamp-2 text-gray-300">
       {{ item.description }}
     </p>
-    <template #footer>
+    <template
+      v-if="item.website"
+      #footer
+    >
       <ULink
         v-if="item.website"
         :to="item.website"
