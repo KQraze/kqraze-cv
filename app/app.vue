@@ -51,20 +51,21 @@ useSeoMeta({
       close
       title="Информация и дизайн сайта в доработке."
     />
-    <UPage class="lg:gap-0 flex flex-row">
+    <UPage
+      class="lg:gap-0 flex flex-row"
+      :ui="{ center: 'min-w-full flex flex-col relative' }"
+    >
       <template #left>
         <PageAside />
       </template>
       <template #default>
-        <div class="flex flex-col relative">
-          <PageHeader />
-          <UPageSection
-            as="main"
-            :ui="{ container: 'lg:py-16 md:py-12 sm:py-10 py-8' }"
-          >
-            <NuxtPage />
-          </UPageSection>
-        </div>
+        <PageHeader />
+        <UPageSection
+          as="main"
+          :ui="{ container: 'min-w-full lg:py-16 md:py-12 sm:py-10 py-8' }"
+        >
+          <NuxtPage />
+        </UPageSection>
       </template>
     </UPage>
     <Analytics />
