@@ -19,14 +19,20 @@ const splitTechnology = (technology: string) => {
     <template #header>
       <ProjectTypeBadge
         :type="item.type as ProjectType"
-        class="absolute top-4 left-4"
+        class="absolute top-4 left-4 z-10"
       />
-      <ProseImg
-        v-if="item.preview"
-        :src="item.preview"
-        :alt="item.title"
-        class="aspect-video object-cover w-full hover:scale-110 transition-[scale] duration-300"
-      />
+      <ULink
+        :to="item.path"
+        class="text-white hover:text-primary"
+      >
+        <ProseImg
+          v-if="item.preview"
+          :src="item.preview"
+          :alt="item.title"
+          :zoom="false"
+          class="aspect-video object-cover w-full hover:scale-110 transition-[scale] duration-300"
+        />
+      </ULink>
     </template>
     <ProseH3
       class="lg:mt-0 md:mt-0 mt-0 lg:mb-0 md:mb-0 mb-0"
