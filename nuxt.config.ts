@@ -50,15 +50,9 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    sitemaps: {
-      pages: {
-        urls: () => {
-          return [
-            { url: '/', changefreq: 'weekly', priority: 1.0, lastmod: new Date() },
-            { url: '/projects', changefreq: 'weekly', priority: 0.9, lastmod: new Date() }
-          ]
-        }
-      }
-    }
+    urls: [
+      { loc: '/', changefreq: 'weekly', priority: 1.0, lastmod: new Date() },
+      { loc: '/projects', changefreq: 'weekly', priority: 0.9, lastmod: new Date() }
+    ]
   }
 })
