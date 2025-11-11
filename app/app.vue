@@ -56,7 +56,7 @@ useSeoMeta({
         <PageAside />
       </template>
       <template #default>
-        <div class="flex flex-col relative min-w-full">
+        <div class="flex flex-col relative">
           <PageHeader />
           <UPageSection
             as="main"

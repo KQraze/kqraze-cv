@@ -25,6 +25,7 @@ useSeoMeta({
         />
       </div>
     </div>
+    <USeparator class="mb-8 lg:hidden" />
     <ContentRenderer
       v-if="home"
       :value="home"
