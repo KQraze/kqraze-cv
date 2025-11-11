@@ -38,6 +38,10 @@ export default defineNuxtConfig({
     }
   },
 
+  routeRules: {
+    '/': { prerender: true }
+  },
+
   compatibilityDate: '2025-01-15',
 
   eslint: {
@@ -50,6 +54,7 @@ export default defineNuxtConfig({
   },
 
   image: {
+    provider: 'vercel',
     domains: ['kqraze-cv.vercel.app']
   },
 
