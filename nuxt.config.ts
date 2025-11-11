@@ -49,6 +49,10 @@ export default defineNuxtConfig({
     }
   },
 
+  image: {
+    domains: ['kqraze-cv.vercel.app']
+  },
+
   sitemap: {
     urls: [
       { loc: '/', changefreq: 'weekly', priority: 1.0, lastmod: new Date() },

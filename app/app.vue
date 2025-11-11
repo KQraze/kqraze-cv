@@ -62,7 +62,7 @@ useSeoMeta({
         <PageHeader />
         <UPageSection
           as="main"
-          :ui="{ container: 'min-w-full lg:py-16 md:py-12 sm:py-10 py-8' }"
+          :ui="{ container: 'lg:py-16 md:py-12 sm:py-10 py-8' }"
         >
           <NuxtPage />
         </UPageSection>
