@@ -7,36 +7,14 @@ const { data } = useAbout()
 <template>
   <UPageAside :ui="{ root: styles().base() }">
     <div :class="styles().container()">
-      <NuxtImg
-        src="/images/avatar.png"
-        :class="styles().image()"
-        alt="Аватар"
-      />
-      <h2 :class="styles().title()">
-        Павел Елисеев
-      </h2>
-      <h3 :class="styles().subtitle()">
-        Fullstack Developer
-      </h3>
+      <ProfileHeader />
       <USeparator :class="styles().separator()" />
 
-      <div :class="styles().section()">
-        <SharedSocialItem
-          v-for="contact in data?.contacts"
-          :key="contact.label"
-          :item="contact"
-        />
-      </div>
+      <PageAsideContacts :contacts="data?.contacts ?? []" />
 
       <USeparator :class="styles().separator()" />
 
-      <div :class="styles().section()">
-        <SharedSocialItem
-          v-for="social in data?.socials"
-          :key="social.label"
-          :item="social"
-        />
-      </div>
+      <PageAsideSocials :socials="data?.socials ?? []" />
 
       <USeparator :class="styles().separator()" />
 

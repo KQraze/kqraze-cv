@@ -48,7 +48,7 @@ useSeoMeta({
   <UApp>
     <UPage class="lg:gap-0 flex flex-row">
       <template #left>
-        <PageAside />
+        <LazyPageAside hydrate-on-media-query="(min-width: 1024px)" />
       </template>
       <template #default>
         <div class="flex flex-col relative">

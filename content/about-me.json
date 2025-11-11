@@ -24,6 +24,12 @@
       "label": "Github",
       "value": "https://github.com/KQraze",
       "href": "https://github.com/KQraze"
+    },
+    {
+      "icon": "i-simple-icons-telegram",
+      "label": "Telegram",
+      "value": "https://t.me/KQraze",
+      "href": "https://t.me/KQraze"
     }
   ],
   "languages": [

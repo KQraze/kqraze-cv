@@ -1,8 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 export default defineNuxtPlugin(() => {
-  if (import.meta.server) return
-
   const YANDEX_METRIKA_ID = '105130603'
 
   // Инициализация Яндекс Метрики

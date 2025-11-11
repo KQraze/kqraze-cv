@@ -4,9 +4,6 @@ export default tv({
   base: 'border-r border-r-neutral',
   slots: {
     container: 'flex flex-col items-center w-full px-6 py-8',
-    image: 'mx-auto max-w-50 aspect-square rounded-full overflow-hidden border-4 border-primary-500',
-    title: 'text-center mt-6 text-2xl font-bold text-gray-900 dark:text-white',
-    subtitle: 'text-center mt-2 text-base bg-gradient-to-r from-primary to-primary-500 bg-clip-text text-transparent font-medium',
     separator: 'my-6 w-full',
     section: 'w-full flex flex-col gap-5',
     sectionTitle: 'text-sm font-semibold text-gray-600 dark:text-gray-300 tracking-wide mb-1',
