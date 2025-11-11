@@ -46,12 +46,17 @@ useSeoMeta({
 
 <template>
   <UApp>
+    <UBanner
+      color="primary"
+      close
+      title="Информация и дизайн сайта в доработке."
+    />
     <UPage class="lg:gap-0 flex flex-row">
       <template #left>
-        <LazyPageAside hydrate-on-media-query="(min-width: 1024px)" />
+        <PageAside />
       </template>
       <template #default>
-        <div class="flex flex-col relative">
+        <div class="flex flex-col relative min-w-full">
           <PageHeader />
           <UPageSection
             as="main"
