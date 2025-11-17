@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 Disallow:
 
-Sitemap: https://kqraze.ru/sitemap.xml
+Sitemap: https://kqraze-cv.vercel.app/sitemap.xml
 
