@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { data: projects } = useProjects()
+const {data: projects, isPending} = useProjects()
 
 useSeoMeta({
   title: 'Моё портфолио'
@@ -15,6 +15,13 @@ useSeoMeta({
         :key="project.path"
         :item="project"
       />
+      <template v-if="isPending">
+        <USkeleton
+          v-for="i in 10"
+          :key="i"
+          class="w-full h-160"
+        />
+      </template>
     </section>
   </div>
 </template>
