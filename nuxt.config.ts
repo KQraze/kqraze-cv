@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   },
 
   devtools: {
-    enabled: true
+    enabled: false
   },
 
   css: ['~/assets/css/main.css'],
@@ -54,7 +54,6 @@ export default defineNuxtConfig({
   },
 
   image: {
-    provider: 'vercel',
     domains: ['kqraze-cv.vercel.app']
   },
 
@@ -65,3 +64,5 @@ export default defineNuxtConfig({
     ]
   }
 })
+//      "@vue/devtools-api": "^8.0.3",
+//      "@vue/devtools-kit": "^8.0.3",
