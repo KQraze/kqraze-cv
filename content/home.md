@@ -15,7 +15,37 @@ description: "Подробная информация обо мне, о моем
 
 ::technology-list
 ---
-items: [{ name: 'Vue', icon: 'logos:vue', color: 'success' }, { name: 'Nuxt', icon: 'logos:nuxt-icon', color: 'success' }, { name: 'React', icon: 'logos:react', color: 'primary' }, { name: 'TypeScript', icon: 'logos:typescript-icon', color: 'neutral' }, { name: 'JavaScript', icon: 'logos:javascript', color: 'warning' }, { name: 'HTML5', icon: 'logos:html-5', color: 'error' }, { name: 'CSS3', icon: 'logos:css-3', color: 'primary' }, { name: 'Tailwind', icon: 'logos:tailwindcss-icon', color: 'primary' }, { name: 'SCSS', icon: 'logos:sass', color: 'accent' }]
+items:
+  - name: "Vue"
+    icon: "logos:vue"
+    color: "success"
+  - name: "Nuxt"
+    icon: "logos:nuxt-icon"
+    color: "success"
+  - name: "React"
+    icon: "logos:react"
+    color: "primary"
+  - name: "Angular"
+    icon: "logos:angular-icon"
+    color: "primary"
+  - name: "TypeScript"
+    icon: "logos:typescript-icon"
+    color: "neutral"
+  - name: "JavaScript"
+    icon: "logos:javascript"
+    color: "warning"
+  - name: "HTML5"
+    icon: "logos:html-5"
+    color: "error"
+  - name: "CSS3"
+    icon: "logos:css-3"
+    color: "primary"
+  - name: "Tailwind"
+    icon: "logos:tailwindcss-icon"
+    color: "primary"
+  - name: "SCSS"
+    icon: "logos:sass"
+    color: "accent"
 ---
 ::
 
@@ -23,7 +53,28 @@ items: [{ name: 'Vue', icon: 'logos:vue', color: 'success' }, { name: 'Nuxt', ic
 
 ::technology-list
 ---
-items: [{ name: 'Nest.js', icon: 'logos:nestjs', color: 'error' }, { name: 'Node.js', icon: 'logos:nodejs-icon', color: 'success' }, { name: 'Laravel', icon: 'logos:laravel', color: 'error' }, { name: 'PHP', icon: 'logos:php', color: 'primary' }, { name: 'MySQL', icon: 'logos:mysql', color: 'primary' }, { name: 'PostgreSQL', icon: 'logos:postgresql', color: 'primary' }, { name: 'Redis', icon: 'logos:redis', color: 'primary' }]
+items:
+  - name: "Nest.js"
+    icon: "logos:nestjs"
+    color: "error"
+  - name: "Node.js"
+    icon: "logos:nodejs-icon"
+    color: "success"
+  - name: "Laravel"
+    icon: "logos:laravel"
+    color: "error"
+  - name: "PHP"
+    icon: "logos:php"
+    color: "primary"
+  - name: "MySQL"
+    icon: "logos:mysql"
+    color: "primary"
+  - name: "PostgreSQL"
+    icon: "logos:postgresql"
+    color: "primary"
+  - name: "Redis"
+    icon: "logos:redis"
+    color: "primary"
 ---
 ::
 
@@ -32,7 +83,28 @@ items: [{ name: 'Nest.js', icon: 'logos:nestjs', color: 'error' }, { name: 'Node
 
 ::technology-list
 ---
-items: [{ name: 'Webstorm', icon: 'logos:webstorm', color: 'accent' }, { name: 'Postman', icon: 'logos:postman-icon', color: 'warning' }, { name: 'Figma', icon: 'logos:figma', color: 'primary' }, { name: 'Git', icon: 'logos:git-icon', color: 'error' }, { name: 'GitHub', icon: 'logos:github-icon', color: 'neutral' }, { name: 'GitLab', icon: 'logos:gitlab-icon', color: 'error' }, { name: 'Docker', icon: 'logos:docker-icon', color: 'primary' }]
+items:
+  - name: "Webstorm"
+    icon: "logos:webstorm"
+    color: "accent"
+  - name: "Postman"
+    icon: "logos:postman-icon"
+    color: "warning"
+  - name: "Figma"
+    icon: "logos:figma"
+    color: "primary"
+  - name: "Git"
+    icon: "logos:git-icon"
+    color: "error"
+  - name: "GitHub"
+    icon: "logos:github-icon"
+    color: "neutral"
+  - name: "GitLab"
+    icon: "logos:gitlab-icon"
+    color: "error"
+  - name: "Docker"
+    icon: "logos:docker-icon"
+    color: "primary"
 ---
 ::
 

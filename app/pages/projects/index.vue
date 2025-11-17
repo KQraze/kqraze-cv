@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const {data: projects, isPending} = useProjects()
+const { data: projects, isPending } = useProjects()
 
 useSeoMeta({
   title: 'Моё портфолио'
