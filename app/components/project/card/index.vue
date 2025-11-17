@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ProjectsCollectionItem } from '@nuxt/content'
+import styles from './styles'
 
 interface Props {
   item: ProjectsCollectionItem
@@ -10,44 +11,45 @@ defineProps<Props>()
 const splitTechnology = (technology: string) => {
   return technology.split('|')
 }
+
+const s = styles()
 </script>
 
 <template>
   <UCard
+    :class="s.card()"
     :ui="{ header: 'p-0 sm:p-0 relative overflow-hidden', body: 'flex flex-col gap-2', footer: 'flex justify-end' }"
   >
     <template #header>
       <ProjectTypeBadge
         :type="item.type as ProjectType"
-        class="absolute top-4 left-4 z-10"
+        :class="s.typeBadge()"
       />
       <ULink
         :to="item.path"
-        class="text-white hover:text-primary"
+        :class="s.imageLink()"
       >
         <ProseImg
           v-if="item.preview"
           :src="item.preview"
           :alt="item.title"
           :zoom="false"
-          class="aspect-video object-cover w-full hover:scale-110 transition-[scale] duration-300"
+          :class="s.image()"
         />
       </ULink>
     </template>
-    <ProseH3
-      class="lg:mt-0 md:mt-0 mt-0 lg:mb-0 md:mb-0 mb-0"
-    >
+    <ProseH3 :class="s.title()">
       <ULink
         :to="item.path"
-        class="text-white hover:text-primary"
+        :class="s.titleLink()"
       >
         {{ item.title }}
       </ULink>
     </ProseH3>
-    <div>
+    <ProseP :class="s.period()">
       {{ item.period }}
-    </div>
-    <div class="flex gap-2 flex-wrap">
+    </ProseP>
+    <div :class="s.technologiesWrapper()">
       <UBadge
         v-for="tech in item.technologies"
         :key="tech"
@@ -59,7 +61,7 @@ const splitTechnology = (technology: string) => {
         {{ splitTechnology(tech)[1] }}
       </UBadge>
     </div>
-    <p class="line-clamp-2 text-gray-300">
+    <p :class="s.description()">
       {{ item.description }}
     </p>
     <template
@@ -70,7 +72,7 @@ const splitTechnology = (technology: string) => {
         v-if="item.website"
         :to="item.website"
         target="_blank"
-        class="font-medium"
+        :class="s.footerLink()"
       >
         Посетить сайт <UIcon name="heroicons:arrow-up-right-16-solid" />
       </ULink>

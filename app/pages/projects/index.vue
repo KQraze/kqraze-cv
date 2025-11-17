@@ -16,10 +16,9 @@ useSeoMeta({
         :item="project"
       />
       <template v-if="isPending">
-        <USkeleton
+        <ProjectCardSkeleton
           v-for="i in 10"
           :key="i"
-          class="w-full h-160"
         />
       </template>
     </section>
